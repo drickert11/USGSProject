@@ -1,28 +1,29 @@
 <%@ page language="java" contentType="text/html charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-    <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <title>Home</title>
+
+<head>
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <title>table</title>
     <meta name="description" content="about us">
     <!-- original linking of stylesheet wasnt working but this is -->
     <style><%@include file="css/index.css"%></style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script lang="javascript" src="js/canvas-datagrid.js"></script>
+    <script lang="javascript" src="js/canvasjs.js"></script>
+    
 </head>
 <header>
 <div class="topnav">
-    <a class="active" href="index.jsp">Home</a>
+    <a href="index.jsp">Home</a>
     <a href="Data-Input.jsp">Data Input</a>
-    <a href="table.jsp">table(in development)</a>
+    <a class="active" href="table.jsp">table(in development)</a>
 
     <div class="ye">
         <button onclick="document.getElementById('id01').style.display='block'">Login</button>
         <button onclick="document.getElementById('id02').style.display='block'">Register</button>
     </div>
 </div>
-
-
-
 <!-- The Modal -->
 <div>
 <!--login button-->
@@ -98,18 +99,12 @@
     </form>
 </div>
 </div>
-
 </header>
 <body>
-<h1>USGS Automation</h1>
-
-<!-- used JSTL to specify images -->
-<img src="<c:url value='/images/USGS_black.png'/>" alt="USGS Logo">
-
-<h2>Welcome to the USGS data automation website</h2>
-
-<img src="<c:url value='/images/ofr20051294.png'/>" alt="Maps with points">
+<div id="test" style="display: block; height: 353px; width: 1720px;">
+<canvas-datagrid class="grid" style="--cdg-cell-color: darkblue;" selectionmode="row">
+<canvas style="display:block; width: 100%; height: 100%; cursor: default;"></canvas>
+</canvas-datagrid>
+</div>
 </body>
-
-
 </html>

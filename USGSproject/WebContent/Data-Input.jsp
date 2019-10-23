@@ -8,14 +8,14 @@
     
     <!-- original linking of stylesheet wasnt working but this is -->
     <style><%@include file="css/index.css"%></style>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.0/xlsx.full.min.js"></script>
 </head>
 
 <div class="topnav">
     <a href="index.jsp">Home</a>
     <a class="active" href="Data-Input.jsp">Data Input</a>
+    <a href="table.jsp">table(in development)</a>
 
     <div class="ye">
         <button onclick="document.getElementById('id01').style.display='block'">Login</button>
@@ -159,7 +159,7 @@
 
 <header>
 <h1>Welcome to the Data Input Page</h1>
-<img src="USGS_black.png" alt="USGS Logo">
+<img src="<c:url value='/images/USGS_black.png'/>" alt="USGS Logo">
 </header>
 
 <body>
