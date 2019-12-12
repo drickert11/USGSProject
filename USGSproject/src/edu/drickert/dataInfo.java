@@ -1,22 +1,24 @@
 package edu.drickert;
+
 import java.io.Serializable;
 
-public class dataInfo implements Serializable{
-	private String year;//1
-	private String resource;//2
-	private String country;//3
-	private String continent;//5
-	private String standMeasure;//6
-	private String Location;//15
-	private String mineType;//16
-	private String admin1;//17
-	private String admin2;//18
-	private String Latitude;//19
-	private String Logitude;//20
-	private String precisionCode;//21
-	private String annualAmount;//34
-	
-	public dataInfo() {}
+public class dataInfo implements Serializable {
+	private String year;// 1
+	private String resource;// 2
+	private String country;// 3
+	private String continent;// 5
+	private String standMeasure;// 6
+	private String Location;// 15
+	private String mineType;// 16
+	private String admin1;// 17
+	private String admin2;// 18
+	private String Latitude;// 19
+	private String Logitude;// 20
+	private String precisionCode;// 21
+	private String annualAmount;// 34
+
+	public dataInfo() {
+	}
 
 	public dataInfo(String year, String resource, String country, String continent, String standMeasure,
 			String location, String mineType, String admin1, String admin2, String latitude, String logitude,
@@ -35,6 +37,12 @@ public class dataInfo implements Serializable{
 		Logitude = logitude;
 		this.precisionCode = precisionCode;
 		this.annualAmount = annualAmount;
+	}
+
+	public String[] getRow() {
+		String[] arr = { year, resource, country, continent, standMeasure, Location, mineType, admin1, admin2, Latitude,
+				Logitude, precisionCode, annualAmount };
+		return arr;
 	}
 
 	public String getYear() {

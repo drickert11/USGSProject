@@ -18,20 +18,20 @@
 </head>
 <header>
 <div class="topnav">
-    <a href="login?action=logout">Logout</a>
-    <a class="active" href="home.jsp">Home</a>
-    <a href="data?action=data">Data Explore</a>
+		<a class="active" href="home.jsp">Home</a> 
+		<a href="data?action=data">Data Visualization</a> 
+		<a href="login?action=logout">Logout</a>
 
 </div>
 </header>
 <body>
 <p>Welcome back, ${sessionScope.user.firstName}.</p>
 <h1>USGS Visualization</h1>
+<h2>USGS Visualization Homepage</h2>
 
 <!-- used JSTL to specify images -->
 <img src="images/USGS_black.png" alt="USGS Logo">
 
-<h2>USGS Visualization Homepage</h2>
 
 
 </div>
