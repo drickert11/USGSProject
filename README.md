@@ -25,3 +25,6 @@ At the moment, the main program runs inside of the Tomcat local server docker co
 
 Going forward: While this project served as a good proof of concept, going forward we will be recreating and continuing forth on a framework more concurrent with todays standards. 
 
+To view a website walthrough please visit the wiki:
+https://github.com/drickert11/USGSProject/wiki
+
