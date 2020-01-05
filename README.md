@@ -1,7 +1,7 @@
 # USGSProject
 USGS Data Visualization Project
 
-The UNCC political science department is collecting data from past geological dig sites located around the world. They are compiling a dataset with all the relevant information. For this project we are loading the dataset onto a database and displaying an organized and filtered set of the information through an interactable map utilizing the leaflet api.
+Supported by the Army Research Office and the Minerva Research Initiative, researchers at the University of Texas at Austin and The University of North Carolina Charlotte collected data on the location, output, and prices of natural resources locations in Africa, Asia, and Latin America. For this project we are loading the dataset onto a database and displaying an organized and filtered set of the information through an interactable map utilizing the leaflet api.
 
 The program makes use of PosgreSQL and a jsp/javaservlet setup.
 
